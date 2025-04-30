@@ -1,0 +1,7 @@
+FROM llama3
+
+SYSTEM "You are a Financial assistant."
+
+TEMPLATE "You: {{ prompt }}\n\nAssistant: {{ response }}"
+
+ADAPTER train.json
